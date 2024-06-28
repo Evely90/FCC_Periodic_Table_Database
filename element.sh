@@ -4,7 +4,7 @@ PSQL="psql --username=freecodecamp --dbname=periodic_table -t --no-align -c"
 # When no argument is given
 if [[ -z $1 ]]; then
   echo "Please provide an element as an argument."
-  exit 1
+  exit 0
 
 else # If an argument is given, check if it's a number, symbol or name
   if [[ $1 =~ ^[0-9]+$ || $1 =~ ^[A-Za-z]+$ ]]; then
@@ -18,7 +18,7 @@ else # If an argument is given, check if it's a number, symbol or name
   
     if [ -z "$ELEMENT" ]; then # if the number, symbol or name is not found in the database
       echo "I could not find that element in the database."
-      exit 1
+      exit 0
 
     else # When it is found in the database
       echo "$ELEMENT" | while IFS="|" read -r NAME SYMBOL ATOMIC_NUMBER TYPE ATOMIC_MASS MELTING_POINT_CELSIUS BOILING_POINT_CELSIUS; do
