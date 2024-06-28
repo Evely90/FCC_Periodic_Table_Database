@@ -1,10 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # FCC_Periodic_Table_Database
 FreeCodeCamp SQL/Bash/Git project: Build a Periodic Table Database
 
 Part of the Relational Database course, which can be found at: https://www.freecodecamp.org/learn/relational-database/
-=======
+***
 # Instructions:
 Complete the tasks below:
 
@@ -68,7 +66,7 @@ Complete the tasks below:
 
 - You should finish your project while on the `main` branch. Your working tree should be clean and you should not have any uncommitted changes
 
-=======
+***
 This repository contains 2 files:
 - element.sh : bash program to get the requested output
 - periodic-table-preperation.sql : my own input code for the SQL tasks
